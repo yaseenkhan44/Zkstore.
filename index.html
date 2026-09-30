@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZK | T-Shirts & Trousers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="Script. js"></script>
+<header class="header">
+  <div class="logo"><h4>ZK.Store</h4></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <button onclick="openCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p>ZK COLLECTION</p>
+    <h1>Premium<br>T-Shirts & Trousers</h1>
+    <p>Modern fashion. Easy WhatsApp ordering.</p>
+    <a href="#products" class="shop-btn">Shop Now</a>
+  </div>
+
+  <div class="hero-image">
+    <!-- هتي پنهنجي Banner image رکي سگهين ٿو -->
+    <img src="product.html/Herobanner.webp" alt="ZK T-Shirts Banner">
+  </div>
+</section>
+
+<section class="products-section" id="products">
+
+  <div class="section-title">
+    <p>ZK COLLECTION</p>
+    <h2>Our Products</h2>
+  </div>
+
+  <div class="filters">
+    <button onclick="showProducts('all')">All</button>
+    <button onclick="showProducts('tshirt')">T-Shirts</button>
+    <button onclick="showProducts('trouser')">Trousers</button>
+  </div>
+
+  <div id="productGrid" class="product-grid">
+
+    <!-- 10 T-Shirts -->
+
+    <div class="product-card tshirt">
+      <img src="product.html/img1.png" alt="T-Shirt 1">
+      <h3>ZK Black T-Shirt</h3>
+      <p>Rs. 1,299</p>
+      <button onclick="addToCart('ZK Black T-Shirt',1299)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img2.png" alt="T-Shirt 2">
+      <h3>ZK White T-Shirt</h3>
+      <p>Rs. 1,299</p>
+      <button onclick="addToCart('ZK White T-Shirt',1299)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img3.png" alt="T-Shirt 3">
+      <h3>ZK Oversize T-Shirt</h3>
+      <p>Rs. 1,499</p>
+      <button onclick="addToCart('ZK Oversize T-Shirt',1499)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img4.webp" alt="T-Shirt 4">
+      <h3>ZK Orange T-Shirt</h3>
+      <p>Rs. 999</p>
+      <button onclick="addToCart('ZK Navy T-Shirt',1299)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img5.jfif" alt="T-Shirt 5">
+      <h3>ZK Olive T-Shirt</h3>
+      <p>Rs. 1,299</p>
+      <button onclick="addToCart('ZK Olive T-Shirt',1299)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img6.jfif" alt="T-Shirt 6">
+      <h3>ZK Beige T-Shirt</h3>
+      <p>Rs. 1,399</p>
+      <button onclick="addToCart('ZK Beige T-Shirt',1399)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img7.jfif" alt="T-Shirt 7">
+      <h3>ZK Grey T-Shirt</h3>
+      <p>Rs. 1,299</p>
+      <button onclick="addToCart('ZK Grey T-Shirt',1299)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img8.jfif" alt="T-Shirt 8">
+      <h3>ZK Maroon T-Shirt</h3>
+      <p>Rs. 1,399</p>
+      <button onclick="addToCart('ZK Maroon T-Shirt',1399)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img9.jfif" alt="T-Shirt 9">
+      <h3>ZK Graphic T-Shirt</h3>
+      <p>Rs. 1,499</p>
+      <button onclick="addToCart('ZK Graphic T-Shirt',1499)">Add to Cart</button>
+    </div>
+
+    <div class="product-card tshirt">
+      <img src="product.html/img10.jfif" alt="T-Shirt 10">
+      <h3>ZK Premium Polo</h3>
+      <p>Rs. 1,599</p>
+      <button onclick="addToCart('ZK Premium Polo',1599)">Add to Cart</button>
+    </div>
+
+
+    <!-- 10 Trousers -->
+
+    <div class="product-card trouser">
+      <img src="product.html/zk1.jfif" alt="black touset polo t shirts rs 1999,">
+      <h3>ZK Black Trouser polo T-Shirt</h3>
+      <p>Rs. 1,999</p>
+      <button onclick="addToCart('ZK Black Trouser  polo T-Shirt',1999)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk2.jfif" alt="Trouser T-Shirt">
+      <h3>ZK Grey T-Shirt black touser</h3>
+      <p>Rs. 1,999</p>
+      <button onclick="addToCart('ZK Grey Trouser',1999)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk3.jfif" alt="Trouser T-Shirt">
+      <h3>ZK Green T-Shirt-black touser </h3>
+      <p>Rs. 1,899</p>
+      <button onclick="addToCart('ZK Green T-Shirt-black touser ',1899)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk4.jfif" alt="Trouser T-Shirt">
+      <h3>ZK Premium black T-Shirt black touser</h3>
+      <p>Rs. 2000</p>
+      <button onclick="addToCart('ZK Premium black T-Shirt black touser',2000)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk5.jfif" alt="Trouser T-Shirt">
+      <h3>ZK Cargo touser T-Shirt</h3>
+      <p>Rs. 2,599</p>
+      <button onclick="addToCart('ZK Cargo touser T-Shirt',2599)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk6.jfif" alt="Trouser T-Shirt">
+      <h3>ZK Cargo Olive Graphics T-Shirt touser</h3>
+      <p>Rs. 2,499</p>
+      <button onclick="addToCart('ZK Cargo Olive Graphic T-Shirt touser',2499)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk7.jfif" alt="Trouser T-Shirt">
+      <h3>ZK Straight Fit</h3>
+      <p>Rs. 1,999</p>
+      <button onclick="addToCart('ZK Straight Fit',1999)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk8.jfif" alt="Trouser (1) T-Shirt(4)">
+      <h3>ZK Relaxed Fit T-Shirt 4 touser 1</h3>
+      <p>Rs. 4399,</p>
+      <button onclick="addToCart('ZK Relaxed T-Shirt 4 touser 1 4399,)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk9.jfif" alt="Trouser T-Shirt">
+      <h3>ZK Premium Black</h3>
+      <p>Rs. 1,999</p>
+      <button onclick="addToCart('ZK Premium Black',1999)">Add to Cart</button>
+    </div>
+
+    <div class="product-card trouser">
+      <img src="product.html/zk10.jfif"Trouser 10">
+      <h3>ZK Premium Khaki</h3>
+      <p>Rs. 2,299</p>
+      <button onclick="addToCart('ZK Premium Khaki',2299)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contact">
+  <h2>ZK</h2>
+  <p>T-Shirts & Trousers</p>
+  <p>WhatsApp: 03111089742</p>
+</footer>
+
+
+<!-- CART -->
+
+<div id="cartModal" class="modal">
+
+  <div class="cart-box">
+
+    <button class="close" onclick="closeCart()">×</button>
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <h3>Total: Rs. <span id="cartTotal">0</span></h3>
+
+    <button class="checkout-btn" onclick="openCheckout()">
+      Checkout on WhatsApp
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- CHECKOUT -->
+
+<div id="checkoutModal" class="modal">
+
+  <div class="cart-box">
+
+    <button class="close" onclick="closeCheckout()">×</button>
+
+    <h2>Order Details</h2>
+
+    <input id="customerName" placeholder="Your Name">
+
+    <input id="customerPhone" placeholder="Phone Number">
+
+    <input id="customerCity" placeholder="City">
+
+    <textarea id="customerAddress" placeholder="Complete Address"></textarea>
+
+    <button class="checkout-btn" onclick="placeOrder()">
+      Place Order
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
